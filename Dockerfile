@@ -1,4 +1,4 @@
-FROM ollama/ollama:0.2.1
+FROM ollama/ollama:latest
 
 ENV PYTHONUNBUFFERED=1
 
@@ -19,4 +19,4 @@ ADD start-ollama-serverless.sh .
 # Override Ollama's entrypoint
 ENTRYPOINT ["/bin/bash", "/app/start-ollama-serverless.sh"]
 
-CMD ["llama3:latest"]
+CMD ["deepseek-r1:70b-llama-distill-q8_0"]
