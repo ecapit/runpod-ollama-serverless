@@ -2,7 +2,7 @@
     "input": {
         "method_name": "generate",
         "payload": {
-            "model": "llama3:latest",
+            "model": "deepseek-r1:70b-llama-distill-q8_0",
             "prompt": "Is eBPF already part of Linux Kernel ?"
         }
     }
